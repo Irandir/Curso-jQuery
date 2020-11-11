@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <style>
+        div#abacaxi{
+            background-color: goldenrod;
+            height: 200px;
+            width: 30;
+        }
+    </style>
+     <script type="text/javascript">
+        $(document).ready(function(){
+            //alert("DOM Carregado!!!");
+            /*$("h1").css("color","#f66");
+            $("h1").hide();
+            $("h1").delay("1000");
+            $("h1").fadeIn("slow")
+            $("h1").text("Curso Jquery PontoCanal")*/
+        //    $("h1").css("color","#f66").hide().delay("1000").fadeIn("slow").text("Curso Jquery PontoCanal");
+        
+        /*$("h1")
+            .css("color","#f66")
+            .hide()
+            .delay("1000")
+            .fadeIn("slow")
+            .text("Curso Jquery PontoCanal")
+            .click(function(){
+                $('body').css("background-color","#C30")
+                $("h1").css("color","#fff");
+            });*/
+        
+        $("a").css({color:"red", display:"block"});
+        $(".link2").css("color","green");
+        $("#link3").css("color","black");
+        $("*").css("padding","10px")
+        $("h1, #link3").css("border-bottom","solid 3px blue")
+        });
+
+        
+
+        $(window).on("load", function(){
+            alert("Elementos Carregados!!!");
+        });
+
+    </script>
+</head>
+<body>
+    <div id="abacaxi"></div>
+    <h1> PontoCanal Inscreva-se</h1>
+    <a href="#">Link 1</a>
+    <a href="https://twitter.com/SakimiChanArt" class="link2">Link 2</a>
+    <a href="https://twitter.com/SakimiChanArt" id="link3">Link 3</a>
+    <img id="imagem" src="https://640272.smushcdn.com/923689/wp-content/uploads/2016/07/madoka-m%C3%A1gica-fanart-780x405.jpg?lossy=0&strip=1&webp=0">
+</body>
+</html>
